@@ -3,7 +3,7 @@ numpy
 scikit-learn
 seaborn
 matplotlib
-
+dill
 
 
 ##-e .
