@@ -5,6 +5,7 @@ import os
 from src.components.data_ingestion import DataIngestion
 from src.components.data_transformation import DataTransformation
 from src.utils import save_object
+from src.components.data_validation import DataValidation
 
 
 ## 1: Data Ingestion 
@@ -17,6 +18,11 @@ logging.info("data ingestion has been completed")
 data_transformation = DataTransformation()
 preprocessor_obj, train_arr, test_arr = data_transformation.initiate_data_transformation(train_data_path, test_data_path)
 logging.info("data transformation has been completed")
+
+# 3: Data Validation
+data_validation = DataValidation()
+data_validation.validate_data(train_data_path, test_data_path)
+logging.info("data validation has been completed")
 
 # try:
 #     a=10
