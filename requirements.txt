@@ -7,6 +7,8 @@ dill
 catboost
 xgboost
 flask
+mlflow
+pytest
 
 
 ##-e .
